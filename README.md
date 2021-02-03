@@ -26,7 +26,7 @@ Challenge proposed by [gscarabelo](https://github.com/Scarabe)
 
 ## In Progress
 
-- [ ] Validar a quantidade de digitos enviados
+- [x] Validar a quantidade de digitos enviados
 - [ ] Exceptions
 - [ ] Testes unitários
 - [ ] Swagger

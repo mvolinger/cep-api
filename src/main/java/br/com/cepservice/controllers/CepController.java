@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.*;
 @AllArgsConstructor
 public class CepController {
 
-    public static final String BASE_URL = "/api";
+    public static final String BASE_URL = "/cep";
     public static final String GET_ADDRESS_BY_CEP = "/{cep}";
 
     private final CepService cepService;

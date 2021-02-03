@@ -14,14 +14,13 @@ public class CepServiceImpl implements CepService {
 
     @Override
     public AddressDTO getAddressBy(String cep) {
-//        this.validateCep(cep);
+        validateCep(cep);
         return client.getAddressBy(cep);
     }
 
-//    private void validateCep(String cep) {
-//        (cep.length() !=8) {
-//        }
-//
-//        throw Exception
-
+    private void validateCep(String cep) {
+        if (cep.length() !=8 )
+            throw new RuntimeException("O CEP deve ter oito dígitos!");
     }
+
+}
