@@ -25,7 +25,7 @@ public class CepController {
 
     @ApiOperation(value = "Get address by cep", notes = "This endpoint will bring the address")
     @ApiResponses(value = {
-            @ApiResponse(code = 201, message = "Address returned successfully")
+            @ApiResponse(code = 200, message = "Address returned successfully")
     })
 
     @GetMapping(GET_ADDRESS_BY_CEP)
