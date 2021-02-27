@@ -11,7 +11,7 @@ import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
-@Api("The CEP API")
+@Api("The Postal Addressing Code API")
 @RestController
 @RequestMapping(CepController.BASE_URL)
 @RefreshScope
@@ -23,14 +23,14 @@ public class CepController {
 
     private final CepService cepService;
 
-    @ApiOperation(value = "Get address by cep", notes = "This endpoint will bring the address")
+    @ApiOperation(value = "Get address by cep", notes = "This endpoint will bring the address by postal addressing code")
     @ApiResponses(value = {
             @ApiResponse(code = 200, message = "Address returned successfully")
     })
 
     @GetMapping(GET_ADDRESS_BY_CEP)
     @ResponseStatus(HttpStatus.OK)
-    public AddressDTO getAddressBy(@PathVariable("cep") String cep) {
-            return cepService.getAddressBy(cep);
+    public AddressDTO getAddressByCep(@PathVariable("cep") String cep) {
+            return cepService.getAddressByCep(cep);
     }
 }

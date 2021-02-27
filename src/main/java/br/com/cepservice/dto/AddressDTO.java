@@ -19,6 +19,8 @@ public class AddressDTO {
 
         private String bairro;
 
+        private String localidade;
+
         private String uf;
 
         private Integer ibge;
