@@ -12,12 +12,12 @@ import org.springframework.web.server.ResponseStatusException;
 @AllArgsConstructor
 public class CepServiceImpl implements CepService {
 
-    private final ViaCepClient client;
+    private final ViaCepClient viaCepClient;
 
     @Override
     public AddressDTO getAddressByCep(String cep) {
         validateCep(cep);
-        return client.getAddressByCep(cep);
+        return viaCepClient.getAddressByCep(cep);
     }
 
     private void validateCep(String cep) {

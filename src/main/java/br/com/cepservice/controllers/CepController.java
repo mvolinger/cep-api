@@ -31,6 +31,6 @@ public class CepController {
     @GetMapping(GET_ADDRESS_BY_CEP)
     @ResponseStatus(HttpStatus.OK)
     public AddressDTO getAddressByCep(@PathVariable("cep") String cep) {
-            return cepService.getAddressByCep(cep);
+        return cepService.getAddressByCep(cep);
     }
 }

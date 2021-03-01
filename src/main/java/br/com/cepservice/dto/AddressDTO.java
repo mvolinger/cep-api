@@ -11,23 +11,23 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class AddressDTO {
 
-        private String cep;
+    private String cep;
 
-        private String logradouro;
+    private String logradouro;
 
-        private String complemento;
+    private String complemento;
 
-        private String bairro;
+    private String bairro;
 
-        private String localidade;
+    private String localidade;
 
-        private String uf;
+    private String uf;
 
-        private Integer ibge;
+    private Integer ibge;
 
-        private Integer gia;
+    private Integer gia;
 
-        private Integer ddd;
+    private Integer ddd;
 
-        private Integer siafi;
+    private Integer siafi;
 }
