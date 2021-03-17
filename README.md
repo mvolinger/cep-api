@@ -29,4 +29,4 @@ Challenge proposed by [@Scarabe](https://github.com/Scarabe)
 - [ ] Dar replace no traço por "" (vazio), validar se string contém apenas dígitos (regex), validar a quantidade de dígitos
 - [ ] Exceptions
 - [ ] Testes
-- [ ] DB Mongo
+- [ ] MongoDB

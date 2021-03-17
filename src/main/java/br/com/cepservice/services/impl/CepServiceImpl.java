@@ -16,11 +16,11 @@ public class CepServiceImpl implements CepService {
 
     @Override
     public AddressDTO getAddressByCep(String cep) {
-        validateCep(cep);
+        validateCepLength(cep);
         return viaCepClient.getAddressByCep(cep);
     }
 
-    private void validateCep(String cep) {
+    private void validateCepLength(String cep) {
         if (cep.length() != 8) {
             throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "CEP must have eight digits!");
        }
